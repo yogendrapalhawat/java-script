@@ -96,7 +96,7 @@ console.log(valueInNumber); // output NaN
 // let str2=" palhawat"
 // console.log(str1+ str2);// output=> yogi palhawat
 
-// confusion
+// confusion hoti hai
 // console.log( "1"+2); // output==> 12
 // console.log(1+"2"); // output==> 12
 // console.log("1"+2+3); // output==> 123

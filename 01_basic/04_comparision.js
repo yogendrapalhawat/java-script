@@ -14,7 +14,7 @@
 // strict check (===)  ==> check value with datatype
 
 console.log("2"==2);// true
-console.log("2"===2);//false
+console.log("2"===2);//false h
 
 
 
