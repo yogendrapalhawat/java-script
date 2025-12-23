@@ -79,7 +79,32 @@ console.log(valueInNumber); // output NaN
 //"yogi"=> true
 
 // string conversion
-let someNumber=33
-let stringNumber= String(someNumber)
-console.log(stringNumber);
-console.log( typeof stringNumber);
+// let someNumber=33
+// let stringNumber= String(someNumber)
+// console.log(stringNumber);
+// console.log( typeof stringNumber);
+
+
+// ********** Operations *************
+
+// let value =3;
+// let negValue= -value
+//  console.log(negValue); // output=> -2
+
+// string concat
+// let str1="yogi"
+// let str2=" palhawat"
+// console.log(str1+ str2);// output=> yogi palhawat
+
+// confusion
+// console.log( "1"+2); // output==> 12
+// console.log(1+"2"); // output==> 12
+// console.log("1"+2+3); // output==> 123
+// console.log(1+2+"3"); // output==> 33
+
+//
+// console.log(+true); // output=>1
+// console.log(+""); // output=>
+    
+
+
