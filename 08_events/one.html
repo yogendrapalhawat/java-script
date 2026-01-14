@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+   <script>
+//  document.getElementById('images').addEventListener('click', function (e) {
+//     if (e.target.id === 'owl') {
+//         alert('owl clicked');
+//     }
+// });
+
+// document.getElementById('owl').onclick = function(){
+//     alert("owl clicked");
+// }
+
+// addeventlistner
+// document.getElementById('owl').addEventListener('click',function(){
+//     alert("owl clicked again")
+// })
+
+// attachEvent()
+//jQuery  baha - on hota hai
+
+// document.getElementById('owl').addEventListener('click',function(e){ // false bes by default hota hai
+//     console.log(e);
+    
+// },false)
+// // kya padana hai-> type, timestamp,defaultPrevent
+// //target, toElemet, srcElement,currentTarget
+// // clientX,clientY, screenX, screenY
+// //altkey,ctrlkey,keyCode
+
+// //Event propogation (bubbling gum)  => bottom se top   pahle print ho owl clicked  then clicked inside the ul
+// //1.
+// document.getElementById('images').addEventListener('click',function(e){
+//     console.log("clicked inside the ul");
+    
+// },false)
+
+
+// //2.
+// document.getElementById('owl').addEventListener('click',function(e){
+//     console.log(" owl clicked");
+//     //e.stopPropagation()  ye lagaya to upar bale pr nhi jaayega
+    
+// },false)
+
+//Event propogation (capturing )  => top to bottom
+//1.
+// document.getElementById('images').addEventListener('click',function(e){
+//     console.log("clicked inside the ul");
+    
+// },true)
+
+
+// //2.
+// document.getElementById('owl').addEventListener('click',function(e){
+//     console.log(" owl clicked");
+    
+// },true)
+
+//e.defaultPrevented()
+// document.getElementById('google').addEventListener('click',function(e){
+//     e.preventDefault();
+//     e.stopPropagation();
+//     console.log("google clicked"); 
+
+// },false)
+
+// project like delete image
+document.querySelector('#images').addEventListener('click',function(e){
+    // console.log(e.target);
+    // console.log(e.target.parentNode);
+    //console.log(e.target.parentNode);
+    console.log(e.target.parentNode.tagName);
+    if(e.target.tagName==='IMG'){
+        console.log(e.target.id);
+        
+        let removeIt=e.target.parentNode;
+    removeIt.remove()
+   //removeIt.parentNode.removeChild(removeIt)
+
+    }
+    
+   // let removeIt=e.target.parentNode;
+   // removeIt.remove()
+   //removeIt.parentNode.removeChild(removeIt)
+},false)
+</script>
+</body>
+
+</html>
