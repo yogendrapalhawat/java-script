@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stop">button</button>
+    <script>
+        // setInterval(function(){
+        //     console.log("yogi");
+            
+        // },2000)
+
+        //
+        
+        // setTimeout(function(){
+        //     console.log("yogendra")
+        // },2000)
+        
+
+        //
+        // const sayYogi=function(){
+        //     console.log(("yogi"));
+            
+        // }
+        //setTimeout(sayYogi,2000)
+
+        // document.querySelector('h1').innerHTML="best Js Series"  me chahata hu ye do second badd kaam ho
+        const changeText=function(){
+            document.querySelector('h1').innerHTML="best Js Series"
+        }
+        //setInterval(changeText,2000)
+        // ise rokha bhi ja skta hai
+        const changeMe=setTimeout(changeText,2000)
+
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(changeMe)
+            console.log("STOPPED");
+            
+        })
+
+
+
+        
+    </script>
+</body>
+</html>
