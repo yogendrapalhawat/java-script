@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #star{
+          height:100px;
+          width:100px;
+          background:red;
+          border-radius:50%;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          color:white;
+          font-weight:bold;
+        }
+      
+        .btns{
+          margin-top:10px;
+          text-align:center;
+        }
+      
+        button{
+          margin:5px;
+          padding:5px 10px;
+        }
+      </style>
+      
+</head>
+<body style="background-color:#212121; display:flex; justify-content:center; align-items:center; height:100vh;">
+
+    <div class="wrapper">
+      
+      <!-- Circle -->
+      <div id="star">
+        circle
+      </div>
+  
+      <!-- Buttons -->
+      <div class="btns">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+      </div>
+  
+    </div>
+  
+  </body>
+  
+<script>
+    const id=document.querySelector('#star')
+    //id.addEventListener('click',function(e){
+//console.log(e);
+//function start()
+const target=e.target;
+//console.log(target.id);
+id.addEventListener('click', function (e) {
+    if (e.target.id === 'star') {
+      id.style.backgroundColor = 'blue'; // 👈 BG color change
+    }
+  });
+</script>
+
+</html>
